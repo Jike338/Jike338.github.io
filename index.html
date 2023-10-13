@@ -82,6 +82,12 @@
     .right-align {
     text-align: right;
     }
+
+    .superscript {
+    vertical-align: super;
+    font-size: smaller;
+  }
+
   </style>
   <link rel="icon" type="image/png" href="seal_icon.png">
   <title>Jike Zhong</title>
@@ -161,17 +167,17 @@
           <!-- Projects -->
 
           <tr>
-            <td width="25%" id="amp_nips22-img"></td>
-            <td valign="top" width="75%" id="amp_nips22-txt"></td>
+            <td width="25%" id="fedbasis-img"></td>
+            <td valign="top" width="75%" id="fedbasis-txt"></td>
           </tr>
           <script type="text/javascript">
             createProjectElement(
-              id = "amp_nips22", {
-              title: "AMP: Automatically Finding Model Parallel Strategies with Heterogeneity Awareness",
-              paper_url: "https://arxiv.org/abs/2210.07297",
-              authors: "<b> Dacheng Li </b>, Hongyi Wang, Eric P. Xing, Hao Zhang",
-              conference: "36th Conference on Neural Information Processing Systems (NeurIPS 2022)",
-            //   image: "figures/amp_nips22.PNG",
+              id = "fedbasis2", {
+              title: "Learning Shareable Bases for Personalized Federated Image Classification",
+              paper_url: "https://arxiv.org/abs/2304.07882",
+              authors: "Hong-You Chen<span class=\"superscript\">*</span>, <b>Jike Zhong<span class=\"superscript\">*</span></b>, Mingda Zhang, Xuhui Jia, Hang Qi, Boqing Gong, Wei-Lun Chao, LiZhang",
+              // conference: "36th Conference on Neural Information Processing Systems (NeurIPS 2022)",
+              image: "figures/fedbasis.png",
               others: null
             });
           </script>
