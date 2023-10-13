@@ -98,6 +98,7 @@
     font-size: smaller;
   }
 
+
   </style>
   <link rel="icon" type="image/png" href="seal_icon.png">
   <title>Jike Zhong</title>
@@ -139,10 +140,14 @@
             <br>
             ${project.authors}
             <br>
-            <em>${project.conference}</em>
-            <br>
-            <br>
-            ${project.description}`
+            
+            <em style="margin-top: 5px; display: inline-block;">${project.conference}</em>
+            
+            <span style="margin-top: 20px; display: inline-block;">
+            ${project.description}
+            </span>
+            </p>`
+            
 
           document.getElementById(id + "-img").innerHTML = html_img;
           document.getElementById(id + "-txt").innerHTML = html_txt;
@@ -169,9 +174,10 @@
             ${project.title}
             <br>
             Supervisor: ${project.supervisor}
-            <br>
-            <br>
-            ${project.description}`
+            <span style="margin-top: 20px; display: inline-block;">
+            ${project.description}
+            </span>
+            </p>`
 
           document.getElementById(id + "-img").innerHTML = html_img;
           document.getElementById(id + "-txt").innerHTML = html_txt;
@@ -190,7 +196,7 @@
               <p align="center">
                 <name align="center">Jike Zhong</name>
               </p>
-              <p>
+              <p style="margin-top: 25px">
                 I am a fresh grad from Ohio State University advised by <a href="https://sites.google.com/view/wei-lun-harry-chao" target="_blank">Dr. Wei-Lun Chao</a> with double majors in <a href="https://cse.osu.edu/">Computer Science & Engineering</a>
                 and <a href="https://data-analytics.osu.edu/">Data Analytics (Statistics)</a>. 
                 
@@ -201,7 +207,7 @@
                 
                 <br>
                 <br>
-                I'm interested in improving multi-user/env ML, especially for the real world, including federated learning, robustness to distribution shifts, personalization, etc. 
+                I'm interested in improving multi-user/env ML, especially in the real world, including federated learning, robustness to distribution shifts, personalization, etc. 
                 I'm also lately interested in discovering the right tokenizer for transformers to enable LLM-like training and behaviors of vision foundation models.  
                 <br>
                 <br>
@@ -239,24 +245,6 @@
 
         <h3>Publications & Preprints</h3>
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-          <tr>
-            <td width="25%" id="fedbasis-img"></td>
-            <td valign="top" width="75%" id="fedbasis-txt"></td>
-          </tr>
-          <tr>
-            <td width="25%"></td>
-          </tr>
-          <script type="text/javascript">
-            createPubElement(
-              id = "fedbasis", {
-              title: "Learning Shareable Bases for Personalized Federated Image Classification",
-              paper_url: "https://arxiv.org/abs/2304.07882",
-              authors: "Hong-You Chen*, <b>Jike Zhong*</b>, Mingda Zhang, Xuhui Jia, Hang Qi, Boqing Gong, Wei-Lun Chao, Li Zhang",
-              conference: "Under Review, ArXiv 2023",
-              image: "fedbasis.png",
-              description: "We propose a new algorithm which helps model to serve new clients",
-            });
-          </script>
 
           <tr>
             <td width="25%" id="fixbn-img"></td>
@@ -273,9 +261,29 @@
               authors: "<b>Jike Zhong*</b>, Hong-You Chen*, Wei-Lun Chao",
               conference: "Under Review, ArXiv 2023",
               image: "fixbn.png",
-              description: "We propose a new algorithm which helps model to serve new clients",
+              description: "We analyze and propose a simple but very effective algorithm which perfectly recovers BatchNorm failure in non-IID federated learning, effectively bridging the gap between BN performance in non-IID FL and Centralized setting.",
             });
           </script>
+
+          <tr>
+            <td width="25%" id="fedbasis-img"></td>
+            <td valign="top" width="75%" id="fedbasis-txt"></td>
+          </tr>
+          <tr>
+            <td width="25%"></td>
+          </tr>
+          <script type="text/javascript">
+            createPubElement(
+              id = "fedbasis", {
+              title: "Learning Shareable Bases for Personalized Federated Image Classification",
+              paper_url: "https://arxiv.org/abs/2304.07882",
+              authors: "Hong-You Chen*, <b>Jike Zhong*</b>, Mingda Zhang, Xuhui Jia, Hang Qi, Boqing Gong, Wei-Lun Chao, Li Zhang",
+              conference: "Under Review, ArXiv 2023",
+              image: "fedbasis.png",
+              description: "We propose a new framework for personalized federated learning, FedBasis, which significantly reduces storage needs and serves the new client with minimal fine-tuning. We also propose an practical PFL testbed termed PFLBed.",
+            });
+          </script>
+
 
           <tr>
             <td width="25%" id="ht-img"></td>
@@ -289,9 +297,9 @@
               title: "Holistic Transfer: Towards Non-Disruptive Fine-Tuning with Partial Target Data",
               paper_url: "https://drive.google.com/file/d/17KlZbVumATM9qJYWGY_05ZD6LBYC8zI9/view",
               authors: "Cheng-Hao Tu*, Hong-You Chen*, <b>Jike Zhong</b>, Zheda Mai, Vardaan Pahuja, Tanya Berger-Wolf, Song Gao, Charles Stewart, Yu Su, Wei-Lun Chao",
-              conference: "Neural Information Processing Systems (NeurIPS) 2023",
+              conference: "Neural Information Processing Systems (<b>NeurIPS</b>) 2023",
               image: "ht.png",
-              description: "We propose a new algorithm which helps model to serve new clients",
+              description: "We raise a practical new learning problem involving the adaptation of a pre-trained source model, capable of classifying a wide range of objects, to a target domain using data that covers only a partial label space, along with several effective baselines.",
             });
           </script>
 
@@ -302,12 +310,12 @@
           <script type="text/javascript">
             createPubElement(
               id = "freeseg", {
-              title: "Learning with Free Object Segments for Long-Tailed Instance Segmentationa",
-              paper_url: "https://drive.google.com/file/d/17KlZbVumATM9qJYWGY_05ZD6LBYC8zI9/view",
+              title: "Learning with Free Object Segments for Long-Tailed Instance Segmentation",
+              paper_url: "https://arxiv.org/abs/2202.11124",
               authors: " Cheng Zhang, Tai-Yu Pan, Tianle Chen, <b>Jike Zhong</b>, Wenjin Fu, and Wei-Lun Chao",
-              conference: "European Conference on Computer Vision (ECCV) 2022",
+              conference: "European Conference on Computer Vision (<b>ECCV</b>) 2022",
               image: "freeseg.png",
-              description: "We propose a new algorithm which helps model to serve new clients",
+              description: "We explore the prospect of increasing the training examples without laborious data collection and annotation (i.e. by copying and pasting the segments onto the original training images) and achieve new SOTA on long-tailed object segmentations.",
             });
           </script>
 
@@ -349,7 +357,7 @@
               title: "Towards Optimal Federated Learning in the Real World <code>&#8212;</code> A Divide-and-Conquer Approach (FedMoE)",
               supervisor: "<a href=\"https://sites.google.com/view/wei-lun-harry-chao\" target=\"_blank\">Dr. Wei-Lun Chao, Ohio State University</a>",
               image: "fedmoe.png",
-              description: "We propose a new algorithm which helps model to serve new clients",
+              description: "We propose mixture of experts (FedMoE) for generic federated learning to solve the intra-client covariate shift. This is motivated by the fact that clients in the real world often feature non-IID distributions, this includes not only the commonly studied inter-client covariate shifts but also less-studied intra-client variance, as seen in the Wilds benchmark.",
             });
           </script>
 
@@ -368,7 +376,7 @@
               title: "Innovative Enhancements to Air Traffic Data Visualization Models",
               supervisor: "<a href=\"https://u.osu.edu/young.1460/about-me/\" target=\"_blank\" >Dr. Seth Young, Ohio State University</a>",
               image: "dv8.png",
-              description: "We propose a new algorithm which helps model to serve new clients",
+              description: "Proposed and built a 3D route-based flight visualization model, including a 3D flight path visualization functionality and a phase-of-flight cluster algorithm. This is built upon the DV8, a joint project started by OSU CSE department and Center of Aviation Study, which allows users to quickly and interactively analyze and visualize billions of data points representing millions of flights.",
             });
           </script>
 
@@ -402,7 +410,7 @@
                   <b>Title:</b>  Rethinking Normalization in Federated Deep Learning
                 </span>
                   <br>
-                  <b>Location:</b> Dreese Laboratories, Ohio State University, Columbus, United States
+                  <b>Location:</b> <a href="https://imageomics.osu.edu/">Imageomics Institute</a>, Ohio State University, Columbus, United States
               </li>
         
               </ul>
@@ -438,7 +446,6 @@
             <td width="60%" valign="middle">
               <ul>
                 <li> <b>2022-12:</b> Magna Cum Laude</li>
-                <li> <b>2022-12:</b> Dean's List All Semesters</li>
                 <li> <b>2021-04:</b> ASA DataFest Winner (Hackathon, 1st place)</li>
                 <li> <b>2021-02:</b> Engineering Honors</li>
                 <li> <b>2020-05:</b> Entrepreneurship and Innovation Scholars </li>
@@ -450,7 +457,7 @@
 
         <h3>Misc.</h3>
         <p style="padding-left:20px">
-        I'm also an avid aviation enthusiast. I love spending time at the local airport during vacations as it's always the biggest attraction to me. Till now I've been plane spotting at over 80 airports worldwide, checkout my aviation photos on <a href="https://www.jetphotos.com/photographer/95564" target="_blank">JetPhotos</a> and <a href="https://www.airliners.net/user/JKzhong/profile/photos" target="_blank">Airliners</a>!
+        I'm an avid aviation enthusiast. I love spending time at the local airport during vacations as it's always the biggest attraction to me. Till now I've been plane spotting at over 80 airports worldwide, checkout my aviation photos on <a href="https://www.jetphotos.com/photographer/95564" target="_blank">JetPhotos</a> and <a href="https://www.airliners.net/user/JKzhong/profile/photos" target="_blank">Airliners</a>!
         <br>
         <br>
         I also enjoy classic piano and opera, and my favorite composer is no one but the one, Frederic Chopin. 
