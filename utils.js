@@ -12,7 +12,7 @@ function copyToClipboard() {
     alert("Email copied to clipboard!");
   }
 
-function createProjectElement(id, project){
+function createPubElement(id, project){
     /* Create an element in Project
     tag: some tags
     title: title of the project or publications
@@ -43,3 +43,30 @@ function createProjectElement(id, project){
 }
 
 
+function createProjectElement(id, project){
+    /* Create an element in Project
+    tag: some tags
+    title: title of the project or publications
+    paper_url: link to the paper
+    authors: authors
+    conference: publication venue
+    image (optional): directory to project image
+    others (optional): anything else
+    */
+    if (project.tag == null)
+        project.tag = id;
+    if (project.others == null)
+        project.others = "";
+
+    html_img = `<img src='${project.image}' style="max-width: 160px"></div></div>`
+    html_txt = `<p>
+      ${project.title}
+      <br>
+      ${project.supervisor}
+      <br>
+      <br>
+      ${project.description}`
+
+    document.getElementById(id + "-img").innerHTML = html_img;
+    document.getElementById(id + "-txt").innerHTML = html_txt;
+}
