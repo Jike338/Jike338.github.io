@@ -35,7 +35,9 @@ function createProjectElement(id, project){
       <br>
       <em>${project.conference}</em>
       <br>
-      ${project.others}`
+      <br>
+      <br>
+      ${project.description}`
 
     document.getElementById(id + "-img").innerHTML = html_img;
     document.getElementById(id + "-txt").innerHTML = html_txt;
