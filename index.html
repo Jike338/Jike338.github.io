@@ -8,6 +8,11 @@
   <style type="text/css">
     /* Template from Han Guo */
 
+    .table-1 {
+    border-collapse: separate;
+    border-spacing: 0 30px; /* Adjust the vertical spacing here */
+    }
+
     a {
       color: #1772d0;
       text-decoration: none;
@@ -156,7 +161,7 @@
           </tr>
         </table>
 
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+        <table class="table-1" width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
 
           <!-- Research -->
           <tr>
@@ -165,7 +170,7 @@
             </td>
           </tr>
 
-          <tr class="bottom-margin-l">
+          <tr>
             <td width="25%" id="fedbasis-img"></td>
             <td valign="top" width="75%" id="fedbasis-txt"></td>
           </tr>
@@ -181,7 +186,7 @@
             });
           </script>
 
-          <tr class="bottom-margin-l">
+          <tr>
             <td width="25%" id="fixbn-img"></td>
             <td valign="top" width="75%" id="fixbn-txt"></td>
           </tr>
@@ -197,7 +202,7 @@
             });
           </script>
 
-          <tr class="bottom-margin-l">
+          <tr>
             <td width="25%" id="ht-img"></td>
             <td valign="top" width="75%" id="ht-txt"></td>
           </tr>
@@ -240,16 +245,24 @@
               <ul>
 
                 <li> 
-                    <b class="bottom-margin">Date:</b> 2023-07
+                    <span class="bottom-margin">
+                    <b>Date:</b> 2023-07
+                    </span>
                     <br>
-                    <b class="bottom-margin">Title:</b>  Semantic Representation for Scalable Visual Self-Supervised Learning
+                    <span class="bottom-margin">
+                    <b>Title:</b>  Semantic Representation for Scalable Visual Self-Supervised Learning
+                    </span>
                     <br>
                     <b>Location:</b> Malone Hall, Johns Hopkins University, Baltimore, United States
                 </li>
                 <li> 
-                  <b class="bottom-margin">Date:</b> 2023-03
+                  <span class="bottom-margin">
+                  <b>Date:</b> 2023-03
+                </span>
                   <br>
-                  <b class="bottom-margin">Title:</b>  Rethinking Normalization in Federated Deep Learning
+                  <span class="bottom-margin">
+                  <b>Title:</b>  Rethinking Normalization in Federated Deep Learning
+                </span>
                   <br>
                   <b>Location:</b> Dreese Laboratories, Ohio State University, Columbus, United States
               </li>
