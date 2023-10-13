@@ -102,7 +102,7 @@
   <title>Jike Zhong</title>
   <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-  <script src="./utils.js">
+  <script>
       function copyToClipboard() {
           const email = 'zhong.523@osu.edu'
         
@@ -134,7 +134,7 @@
 
           html_img = `<img src='${project.image}' style="max-width: 160px"></div></div>`
           html_txt = `<p>
-            <a href="${project.paper_url}"><papertitle>${project.title}</papertitle></a>
+            <a href="${project.paper_url}" target="_blank"><papertitle>${project.title}</papertitle></a>
             <br>
             ${project.authors}
             <br>
@@ -167,7 +167,7 @@
           html_txt = `<p>
             ${project.title}
             <br>
-            ${project.supervisor}
+            Supervisor: ${project.supervisor}
             <br>
             <br>
             ${project.description}`
@@ -202,9 +202,9 @@
               </p>
               <p align=center>
                 <a onclick="copyToClipboard()">Email</a> &nbsp/&nbsp
-                <a href="https://scholar.google.com/citations?user=s_KkDawAAAAJ&hl=en&oi=ao">Google Scholar</a> &nbsp/&nbsp
-                <a href="CV.pdf"> CV </a> &nbsp/&nbsp
-                <a href="https://github.com/Jike338"> GitHub </a>
+                <a href="https://scholar.google.com/citations?user=s_KkDawAAAAJ&hl=en&oi=ao" target="_blank">Google Scholar</a> &nbsp/&nbsp
+                <a href="CV.pdf" target="_blank"> CV </a> &nbsp/&nbsp
+                <a href="https://github.com/Jike338" target="_blank"> GitHub </a>
                 <!-- <a href="SOP.pdf"> SoP </a> &nbsp/&nbsp -->
                 <!-- <a href="https://twitter.com/DachengLi177"> Twitter </a> -->
               </p>
@@ -221,11 +221,11 @@
           <tr>
             <td width="60%" valign="middle">
               <ul>
-                <li> <b>2023-10:</b> Our paper <a href="https://drive.google.com/file/d/17KlZbVumATM9qJYWGY_05ZD6LBYC8zI9/view">"Holistic Transfer"</a> is accepted to NeurIPS 2023 </li>
-                <li> <b>2023-06:</b> Joined <a href="https://ccvl.jhu.edu/team/">CCVL lab</a> at JHU as a research intern</li>       
+                <li> <b>2023-10:</b> Our paper <a href="https://drive.google.com/file/d/17KlZbVumATM9qJYWGY_05ZD6LBYC8zI9/view" target="_blank">"Holistic Transfer"</a> is accepted to NeurIPS 2023 </li>
+                <li> <b>2023-06:</b> Joined <a href="https://ccvl.jhu.edu/team/" target="_blank">CCVL lab</a> at JHU as a research intern</li>       
                 <li> <b>2023-05:</b> Joined Salesforce as a FT Data/SW engineer on LLM applications</li>
-                <li> <b>2023-01:</b> Two preprints are avaliable on ArXiv, <a href="https://arxiv.org/abs/2304.07882">"FedBasis"</a> and <a href="https://arxiv.org/abs/2303.06530">"FixBN"</a></li>
-                <li> <b>2022-07:</b> Our paper <a href="https://arxiv.org/pdf/2202.11124.pdf">"FreeSeg"</a> is accepted to ECCV 2022</li>
+                <li> <b>2023-01:</b> Two preprints are avaliable on ArXiv, <a href="https://arxiv.org/abs/2304.07882" target="_blank">"FedBasis"</a> and <a href="https://arxiv.org/abs/2303.06530" target="_blank">"FixBN"</a></li>
+                <li> <b>2022-07:</b> Our paper <a href="https://arxiv.org/pdf/2202.11124.pdf" target="_blank">"FreeSeg"</a> is accepted to ECCV 2022</li>
               </ul>
             </td>
           </tr>
@@ -322,7 +322,7 @@
             createProjectElement(
               id = "contextgpt", {
               title: "Semantic Representation for Scalable Visual Self-Supervised Learning",
-              supervisor: "<a href=\"https://www.cs.jhu.edu/~ayuille/\">Alan Yuille, Johns Hopkins University</a>",
+              supervisor: "<a href=\"https://www.cs.jhu.edu/~ayuille/\" target=\"_blank\">Alan Yuille, Johns Hopkins University</a>",
               image: "contextgpt.png",
               description: "Current vision models cannot achieve the same in-context learning ability and scalability we see in LLMs due to the diversified representations required for different tasks and the inability to fully understand global context. In this project, I seek to discover emergent properties of vision models that can make them truly scalable through the use of effective visual tokens. Specifically, during training, we follow the common masked language modeling strategy and adopt the MAE-VQGAN architecture. However, instead of patch-level masking, we apply object-level masking. This forces the model to treat each object as an independent entity/token and forces attention layers in the encoder to look at global context, which helps to comprehend the visual scene. During inference, we consolidate common vision tasks such as segmentation and colorization into one task as image inpainting. This tokenizer we designed saw the model achieve much improved in-context learning results and become scalable by benefiting from more data.",
 
@@ -341,7 +341,7 @@
             createProjectElement(
               id = "fedmoe", {
               title: "Towards Optimal Federated Learning in the Real World <code>&#8212;</code> A Divide-and-Conquer Approach (FedMoE)",
-              supervisor: "<a href=\"https://sites.google.com/view/wei-lun-harry-chao\">Wei-Lun Chao, Ohio State University</a>",
+              supervisor: "<a href=\"https://sites.google.com/view/wei-lun-harry-chao\" target=\"_blank\">Wei-Lun Chao, Ohio State University</a>",
               image: "fedmoe.png",
               description: "We propose a new algorithm which helps model to serve new clients",
             });
@@ -360,7 +360,7 @@
             createProjectElement(
               id = "dv8", {
               title: "Innovative Enhancements to Air Traffic Data Visualization Models",
-              supervisor: "<a href=\"https://u.osu.edu/young.1460/about-me/\">Seth Young, Ohio State University</a>",
+              supervisor: "<a href=\"https://u.osu.edu/young.1460/about-me/\" target=\"_blank\" >Seth Young, Ohio State University</a>",
               image: "dv8.png",
               description: "We propose a new algorithm which helps model to serve new clients",
             });

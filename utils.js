@@ -62,7 +62,7 @@ function createProjectElement(id, project){
     html_txt = `<p>
       ${project.title}
       <br>
-      ${project.supervisor}
+      Supervisor: ${project.supervisor}
       <br>
       <br>
       ${project.description}`
