@@ -1,0 +1,202 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1200" viewBox="0 0 1600 1200" role="img" aria-labelledby="title desc">
+<title id="title">Distillation overshoot and success-preserving on-policy distillation</title><desc id="desc">Panels A and C rebuilt from the original teaser_v3_data.json. Experimental values are unchanged.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M1 1 L7 4 L1 7" fill="none" stroke="context-stroke" stroke-width="1.4"/></marker></defs>
+<rect width="1600" height="1200" fill="white"/>
+<g font-family="Arial, Helvetica, sans-serif">
+<text x="24" y="49" font-size="22" fill="#946247" font-weight="600" text-anchor="start">01</text>
+<text x="77" y="49" font-size="28" fill="#18212b" font-weight="600" text-anchor="start">Distillation overshoot</text>
+<line x1="24" y1="70" x2="754" y2="70" stroke="#e8edf1" stroke-width="1.5"/>
+<text x="820" y="49" font-size="22" fill="#946247" font-weight="600" text-anchor="start">02</text>
+<text x="873" y="49" font-size="28" fill="#18212b" font-weight="600" text-anchor="start">Preserve successful choices</text>
+<line x1="820" y1="70" x2="1576" y2="70" stroke="#e8edf1" stroke-width="1.5"/>
+<text x="24" y="645" font-size="22" fill="#946247" font-weight="600" text-anchor="start">03</text>
+<text x="77" y="645" font-size="28" fill="#18212b" font-weight="600" text-anchor="start">Regression across settings</text>
+<line x1="24" y1="666" x2="754" y2="666" stroke="#e8edf1" stroke-width="1.5"/>
+<text x="820" y="645" font-size="22" fill="#946247" font-weight="600" text-anchor="start">04</text>
+<text x="873" y="645" font-size="28" fill="#18212b" font-weight="600" text-anchor="start">Gains over the teacher</text>
+<line x1="820" y1="666" x2="1576" y2="666" stroke="#e8edf1" stroke-width="1.5"/>
+<text x="110" y="123" font-size="23" fill="#687584" font-weight="400" text-anchor="start">Gemma / ALFWorld</text>
+<text x="710" y="126" font-size="34" fill="#287faa" font-weight="600" text-anchor="end">88.9%</text>
+<text x="710" y="156" font-size="23" fill="#287faa" font-weight="500" text-anchor="end">+15.2 pp vs. OPD</text>
+<line x1="110" y1="463.5" x2="710" y2="463.5" stroke="#e8edf1" stroke-width="1.5"/>
+<text x="93" y="470.5" font-size="21" fill="#687584" font-weight="400" text-anchor="end">20</text>
+<line x1="110" y1="400.5" x2="710" y2="400.5" stroke="#e8edf1" stroke-width="1.5"/>
+<text x="93" y="407.5" font-size="21" fill="#687584" font-weight="400" text-anchor="end">40</text>
+<line x1="110" y1="337.5" x2="710" y2="337.5" stroke="#e8edf1" stroke-width="1.5"/>
+<text x="93" y="344.5" font-size="21" fill="#687584" font-weight="400" text-anchor="end">60</text>
+<line x1="110" y1="274.5" x2="710" y2="274.5" stroke="#e8edf1" stroke-width="1.5"/>
+<text x="93" y="281.5" font-size="21" fill="#687584" font-weight="400" text-anchor="end">80</text>
+<line x1="110" y1="211.5" x2="710" y2="211.5" stroke="#e8edf1" stroke-width="1.5"/>
+<text x="93" y="218.5" font-size="21" fill="#687584" font-weight="400" text-anchor="end">100</text>
+<line x1="110" y1="180" x2="110" y2="495" stroke="#687584" stroke-width="1.5"/>
+<line x1="110" y1="495" x2="710" y2="495" stroke="#687584" stroke-width="1.5"/>
+<text x="110.0" y="526" font-size="21" fill="#687584" font-weight="400" text-anchor="middle">0</text>
+<text x="230.0" y="526" font-size="21" fill="#687584" font-weight="400" text-anchor="middle">10</text>
+<text x="350.0" y="526" font-size="21" fill="#687584" font-weight="400" text-anchor="middle">20</text>
+<text x="470.0" y="526" font-size="21" fill="#687584" font-weight="400" text-anchor="middle">30</text>
+<text x="590.0" y="526" font-size="21" fill="#687584" font-weight="400" text-anchor="middle">40</text>
+<text x="710.0" y="526" font-size="21" fill="#687584" font-weight="400" text-anchor="middle">50</text>
+<text x="410" y="560" font-size="22" fill="#687584" font-weight="400" text-anchor="middle">Training update</text>
+<text x="48" y="340" transform="rotate(-90 48 340)" fill="#687584" font-size="23" text-anchor="middle">Success (%)</text>
+<line x1="110" y1="309.465" x2="710" y2="309.465" stroke="#96a1ab" stroke-width="2" stroke-dasharray="7 6"/>
+<path d="M 110.0,474.525 L 170.0,409.95 L 230.0,306.63 L 290.0,280.16999999999996 L 350.0,275.76 L 410.0,265.68 L 470.0,281.115 L 530.0,297.495 L 590.0,300.33000000000004 L 650.0,292.77 L 710.0,294.345" fill="none" stroke="#d26964" stroke-width="3.8"/>
+<circle cx="110.0" cy="474.525" r="4.8" fill="#d26964" stroke="#d26964" stroke-width="1"/>
+<circle cx="170.0" cy="409.95" r="4.8" fill="#d26964" stroke="#d26964" stroke-width="1"/>
+<circle cx="230.0" cy="306.63" r="4.8" fill="#d26964" stroke="#d26964" stroke-width="1"/>
+<circle cx="290.0" cy="280.16999999999996" r="4.8" fill="#d26964" stroke="#d26964" stroke-width="1"/>
+<circle cx="350.0" cy="275.76" r="4.8" fill="#d26964" stroke="#d26964" stroke-width="1"/>
+<circle cx="410.0" cy="265.68" r="4.8" fill="#d26964" stroke="#d26964" stroke-width="1"/>
+<circle cx="470.0" cy="281.115" r="4.8" fill="#d26964" stroke="#d26964" stroke-width="1"/>
+<circle cx="530.0" cy="297.495" r="4.8" fill="#d26964" stroke="#d26964" stroke-width="1"/>
+<circle cx="590.0" cy="300.33000000000004" r="4.8" fill="#d26964" stroke="#d26964" stroke-width="1"/>
+<circle cx="650.0" cy="292.77" r="4.8" fill="#d26964" stroke="#d26964" stroke-width="1"/>
+<circle cx="710.0" cy="294.345" r="4.8" fill="#d26964" stroke="#d26964" stroke-width="1"/>
+<path d="M 110.0,474.525 L 170.0,450.27 L 230.0,326.475 L 290.0,249.29999999999998 L 350.0,234.81 L 410.0,247.095 L 470.0,244.575 L 530.0,243.0 L 590.0,251.505 L 650.0,251.82 L 710.0,246.46499999999997" fill="none" stroke="#287faa" stroke-width="3.8"/>
+<circle cx="110.0" cy="474.525" r="4.8" fill="#287faa" stroke="#287faa" stroke-width="1"/>
+<circle cx="170.0" cy="450.27" r="4.8" fill="#287faa" stroke="#287faa" stroke-width="1"/>
+<circle cx="230.0" cy="326.475" r="4.8" fill="#287faa" stroke="#287faa" stroke-width="1"/>
+<circle cx="290.0" cy="249.29999999999998" r="4.8" fill="#287faa" stroke="#287faa" stroke-width="1"/>
+<circle cx="350.0" cy="234.81" r="4.8" fill="#287faa" stroke="#287faa" stroke-width="1"/>
+<circle cx="410.0" cy="247.095" r="4.8" fill="#287faa" stroke="#287faa" stroke-width="1"/>
+<circle cx="470.0" cy="244.575" r="4.8" fill="#287faa" stroke="#287faa" stroke-width="1"/>
+<circle cx="530.0" cy="243.0" r="4.8" fill="#287faa" stroke="#287faa" stroke-width="1"/>
+<circle cx="590.0" cy="251.505" r="4.8" fill="#287faa" stroke="#287faa" stroke-width="1"/>
+<circle cx="650.0" cy="251.82" r="4.8" fill="#287faa" stroke="#287faa" stroke-width="1"/>
+<circle cx="710.0" cy="246.46499999999997" r="4.8" fill="#287faa" stroke="#287faa" stroke-width="1"/>
+<circle cx="410.0" cy="265.68" r="7" fill="#d26964" stroke="#d26964" stroke-width="2"/>
+<path d="M 420.0 257.68 Q 590 245.68 706 286.345" fill="none" stroke="#d26964" stroke-width="2" stroke-dasharray="5 5"/>
+<text x="575" y="350" font-size="22" fill="#d26964" font-weight="500" text-anchor="middle">Regression</text>
+<line x1="602" y1="335" x2="655" y2="290" stroke="#d26964" stroke-width="1.7" marker-end="url(#arrow)"/>
+<text x="300" y="403" font-size="22" fill="#d26964" font-weight="500" text-anchor="start">Overshoot</text>
+<text x="300" y="432" font-size="21" fill="#d26964" font-weight="400" text-anchor="start">+13.9 pp vs. teacher</text>
+<line x1="392" y1="385" x2="410.0" y2="279.68" stroke="#d26964" stroke-width="1.5" marker-end="url(#arrow)"/>
+<line x1="108" y1="597" x2="137" y2="597" stroke="#d26964" stroke-width="3"/>
+<text x="147" y="604" font-size="21" fill="#687584" font-weight="400" text-anchor="start">Ordinary OPD</text>
+<line x1="345" y1="597" x2="374" y2="597" stroke="#287faa" stroke-width="3"/>
+<text x="384" y="604" font-size="21" fill="#687584" font-weight="400" text-anchor="start">SPOD</text>
+<line x1="525" y1="597" x2="554" y2="597" stroke="#96a1ab" stroke-width="3" stroke-dasharray="5 4"/>
+<text x="564" y="604" font-size="21" fill="#687584" font-weight="400" text-anchor="start">Teacher</text>
+<text x="842" y="124" font-size="29" fill="#18212b" font-weight="400" text-anchor="start">L<tspan baseline-shift="sub" font-size="17">s</tspan> = (1 − g) KL(p<tspan baseline-shift="sub" font-size="17">T</tspan> ∥ p<tspan baseline-shift="sub" font-size="17">S</tspan>)</text>
+<text x="1250" y="124" font-size="29" fill="#287faa" font-weight="400" text-anchor="start">+ λg L<tspan baseline-shift="sub" font-size="17">floor</tspan>(p<tspan baseline-shift="sub" font-size="17">S</tspan>(a|s))</text>
+<line x1="927" y1="142" x2="1210" y2="142" stroke="#c9d0d6" stroke-width="1.5"/>
+<line x1="1280" y1="142" x2="1557" y2="142" stroke="#287faa" stroke-width="1.5"/>
+<text x="1068" y="176" font-size="22" fill="#687584" font-weight="400" text-anchor="middle">Teacher guidance</text>
+<text x="1418" y="176" font-size="22" fill="#287faa" font-weight="400" text-anchor="middle">Success preservation</text>
+<text x="842" y="231" font-size="26" fill="#18212b" font-weight="400" text-anchor="start">g = 1 if success and p<tspan baseline-shift="sub" font-size="17">T</tspan>(a|s) &lt; p<tspan baseline-shift="sub" font-size="17">S</tspan>(a|s)</text>
+<text x="842" y="269" font-size="24" fill="#687584" font-weight="400" text-anchor="start">g = 0 otherwise</text>
+<text x="1001" y="333" font-size="24" fill="#287faa" font-weight="600" text-anchor="middle">Successful action</text>
+<text x="1001" y="364" font-size="22" fill="#687584" font-weight="400" text-anchor="middle">the teacher disfavors</text>
+<text x="1389" y="348" font-size="24" fill="#18212b" font-weight="600" text-anchor="middle">Other decisions</text>
+<circle cx="908" cy="425" r="31" fill="white" stroke="#8a96a3" stroke-width="2"/>
+<text x="908" y="433" font-size="26" fill="#8a96a3" font-weight="600" text-anchor="middle">T</text>
+<text x="908" y="491" font-size="21" fill="#687584" font-weight="400" text-anchor="middle">Teacher</text>
+<circle cx="1100" cy="425" r="31" fill="white" stroke="#287faa" stroke-width="2"/>
+<text x="1100" y="433" font-size="26" fill="#287faa" font-weight="600" text-anchor="middle">S</text>
+<text x="1100" y="491" font-size="21" fill="#687584" font-weight="400" text-anchor="middle">Student</text>
+<line x1="949" y1="425" x2="1059" y2="425" stroke="#9ba5af" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#arrow)"/>
+<circle cx="1004" cy="425" r="13" fill="white" stroke="white" stroke-width="0"/>
+<line x1="997" y1="418" x2="1011" y2="432" stroke="#d26964" stroke-width="2.6"/>
+<line x1="997" y1="432" x2="1011" y2="418" stroke="#d26964" stroke-width="2.6"/>
+<text x="1004" y="398" font-size="18" fill="#d26964" font-weight="400" text-anchor="middle">Teacher pull off</text>
+<circle cx="1293" cy="425" r="31" fill="white" stroke="#8a96a3" stroke-width="2"/>
+<text x="1293" y="433" font-size="26" fill="#8a96a3" font-weight="600" text-anchor="middle">T</text>
+<text x="1293" y="491" font-size="21" fill="#687584" font-weight="400" text-anchor="middle">Teacher</text>
+<circle cx="1485" cy="425" r="31" fill="white" stroke="#287faa" stroke-width="2"/>
+<text x="1485" y="433" font-size="26" fill="#287faa" font-weight="600" text-anchor="middle">S</text>
+<text x="1485" y="491" font-size="21" fill="#687584" font-weight="400" text-anchor="middle">Student</text>
+<line x1="1334" y1="425" x2="1444" y2="425" stroke="#287faa" stroke-width="2.5" marker-end="url(#arrow)"/>
+<text x="1389" y="403" font-size="22" fill="#287faa" font-weight="400" text-anchor="middle">KL</text>
+<path d="M 891 530 L 891 549 Q 891 565 908 573 Q 925 565 925 549 L 925 530 Z" fill="#f3f8fb" stroke="#287faa" stroke-width="2"/>
+<path d="M 899 549 L 906 555 L 917 540" fill="none" stroke="#287faa" stroke-width="2"/>
+<text x="941" y="546" font-size="23" fill="#287faa" font-weight="600" text-anchor="start">Soft floor</text>
+<text x="941" y="578" font-size="21" fill="#687584" font-weight="400" text-anchor="start">Preserve the successful choice</text>
+<path d="M 1104 551 Q 1150 541 1120 460" fill="none" stroke="#287faa" stroke-width="2" marker-end="url(#arrow)"/>
+<circle cx="230" cy="700" r="6" fill="white" stroke="#d26964" stroke-width="2"/>
+<text x="247" y="707" font-size="21" fill="#687584" font-weight="400" text-anchor="start">Peak</text>
+<circle cx="343" cy="700" r="5" fill="#d26964" stroke="#d26964" stroke-width="2"/>
+<text x="360" y="707" font-size="21" fill="#687584" font-weight="400" text-anchor="start">Final</text>
+<line x1="489" y1="700" x2="454" y2="700" stroke="#d26964" stroke-width="1.7" stroke-dasharray="4 3" marker-end="url(#arrow)"/>
+<text x="501" y="707" font-size="21" fill="#687584" font-weight="400" text-anchor="start">Regression</text>
+<line x1="414.2" y1="742" x2="414.2" y2="1065" stroke="#9ba5af" stroke-width="1.5" stroke-dasharray="5 5"/>
+<text x="214" y="769" font-size="23" fill="#687584" font-weight="400" text-anchor="end">Gemma ALF</text>
+<line x1="504.44" y1="762" x2="675.52" y2="762" stroke="#e5b0ad" stroke-width="4"/>
+<line x1="671.52" y1="776" x2="508.44" y2="776" stroke="#d26964" stroke-width="1.3" stroke-dasharray="4 3" marker-end="url(#arrow)"/>
+<circle cx="675.52" cy="762" r="7" fill="white" stroke="#d26964" stroke-width="2.2"/>
+<circle cx="504.44" cy="762" r="4.5" fill="#d26964" stroke="#d26964" stroke-width="2"/>
+<text x="214" y="825" font-size="23" fill="#687584" font-weight="400" text-anchor="end">Qwen ALF</text>
+<line x1="427.36" y1="818" x2="528.88" y2="818" stroke="#e5b0ad" stroke-width="4"/>
+<line x1="524.88" y1="832" x2="431.36" y2="832" stroke="#d26964" stroke-width="1.3" stroke-dasharray="4 3" marker-end="url(#arrow)"/>
+<circle cx="528.88" cy="818" r="7" fill="white" stroke="#d26964" stroke-width="2.2"/>
+<circle cx="427.36" cy="818" r="4.5" fill="#d26964" stroke="#d26964" stroke-width="2"/>
+<text x="214" y="881" font-size="23" fill="#687584" font-weight="400" text-anchor="end">Gemma Web</text>
+<line x1="461.20000000000005" y1="874" x2="532.64" y2="874" stroke="#e5b0ad" stroke-width="4"/>
+<line x1="528.64" y1="888" x2="465.20000000000005" y2="888" stroke="#d26964" stroke-width="1.3" stroke-dasharray="4 3" marker-end="url(#arrow)"/>
+<circle cx="532.64" cy="874" r="7" fill="white" stroke="#d26964" stroke-width="2.2"/>
+<circle cx="461.20000000000005" cy="874" r="4.5" fill="#d26964" stroke="#d26964" stroke-width="2"/>
+<text x="214" y="937" font-size="23" fill="#687584" font-weight="400" text-anchor="end">Qwen Web</text>
+<line x1="487.52" y1="930" x2="600.3199999999999" y2="930" stroke="#e5b0ad" stroke-width="4"/>
+<line x1="596.3199999999999" y1="944" x2="491.52" y2="944" stroke="#d26964" stroke-width="1.3" stroke-dasharray="4 3" marker-end="url(#arrow)"/>
+<circle cx="600.3199999999999" cy="930" r="7" fill="white" stroke="#d26964" stroke-width="2.2"/>
+<circle cx="487.52" cy="930" r="4.5" fill="#d26964" stroke="#d26964" stroke-width="2"/>
+<text x="214" y="993" font-size="23" fill="#687584" font-weight="400" text-anchor="end">Gemma Sci</text>
+<line x1="278.84" y1="986" x2="278.84" y2="986" stroke="#e5b0ad" stroke-width="4"/>
+<circle cx="278.84" cy="986" r="7" fill="white" stroke="#d26964" stroke-width="2.2"/>
+<circle cx="278.84" cy="986" r="4.5" fill="#d26964" stroke="#d26964" stroke-width="2"/>
+<text x="214" y="1049" font-size="23" fill="#687584" font-weight="400" text-anchor="end">Qwen Sci</text>
+<line x1="393.52" y1="1042" x2="451.8" y2="1042" stroke="#e5b0ad" stroke-width="4"/>
+<line x1="447.8" y1="1056" x2="397.52" y2="1056" stroke="#d26964" stroke-width="1.3" stroke-dasharray="4 3" marker-end="url(#arrow)"/>
+<circle cx="451.8" cy="1042" r="7" fill="white" stroke="#d26964" stroke-width="2.2"/>
+<circle cx="393.52" cy="1042" r="4.5" fill="#d26964" stroke="#d26964" stroke-width="2"/>
+<line x1="245" y1="1080" x2="715" y2="1080" stroke="#687584" stroke-width="1.5"/>
+<text x="320.2" y="1111" font-size="21" fill="#687584" font-weight="400" text-anchor="middle">-5</text>
+<text x="414.2" y="1111" font-size="21" fill="#687584" font-weight="400" text-anchor="middle">0</text>
+<text x="508.20000000000005" y="1111" font-size="21" fill="#687584" font-weight="400" text-anchor="middle">+5</text>
+<text x="602.2" y="1111" font-size="21" fill="#687584" font-weight="400" text-anchor="middle">+10</text>
+<text x="696.2" y="1111" font-size="21" fill="#687584" font-weight="400" text-anchor="middle">+15</text>
+<text x="480" y="1151" font-size="23" fill="#687584" font-weight="400" text-anchor="middle">Points vs. teacher</text>
+<line x1="966" y1="700" x2="995" y2="700" stroke="#d26964" stroke-width="3"/>
+<text x="1005" y="707" font-size="21" fill="#687584" font-weight="400" text-anchor="start">Ordinary OPD</text>
+<line x1="1284" y1="700" x2="1313" y2="700" stroke="#287faa" stroke-width="3"/>
+<text x="1323" y="707" font-size="21" fill="#687584" font-weight="400" text-anchor="start">SPOD</text>
+<text x="1059" y="750" font-size="24" fill="#18212b" font-weight="600" text-anchor="middle">Qwen</text>
+<text x="1379" y="750" font-size="24" fill="#18212b" font-weight="600" text-anchor="middle">Gemma</text>
+<line x1="900" y1="1080.0" x2="1550" y2="1080.0" stroke="#e8edf1" stroke-width="1.5"/>
+<text x="884" y="1087.0" font-size="21" fill="#687584" font-weight="400" text-anchor="end">-10</text>
+<line x1="900" y1="985.7142857142858" x2="1550" y2="985.7142857142858" stroke="#e8edf1" stroke-width="1.5"/>
+<text x="884" y="992.7142857142858" font-size="21" fill="#687584" font-weight="400" text-anchor="end">0</text>
+<line x1="900" y1="891.4285714285714" x2="1550" y2="891.4285714285714" stroke="#e8edf1" stroke-width="1.5"/>
+<text x="884" y="898.4285714285714" font-size="21" fill="#687584" font-weight="400" text-anchor="end">+10</text>
+<line x1="900" y1="797.1428571428571" x2="1550" y2="797.1428571428571" stroke="#e8edf1" stroke-width="1.5"/>
+<text x="884" y="804.1428571428571" font-size="21" fill="#687584" font-weight="400" text-anchor="end">+20</text>
+<line x1="900" y1="750" x2="900" y2="1080" stroke="#687584" stroke-width="1.5"/>
+<line x1="900" y1="1080" x2="1550" y2="1080" stroke="#687584" stroke-width="1.5"/>
+<line x1="900" y1="985.7142857142858" x2="1550" y2="985.7142857142858" stroke="#96a1ab" stroke-width="1.8" stroke-dasharray="6 5"/>
+<rect x="928" y="979.1142857142858" width="28" height="6.600000000000023" rx="1.5" fill="#d26964"/>
+<rect x="964" y="882.0" width="28" height="103.71428571428578" rx="1.5" fill="#287faa"/>
+<text x="978" y="870.0" font-size="21" fill="#287faa" font-weight="600" text-anchor="middle">+11.0</text>
+<text x="960" y="1111" font-size="23" fill="#18212b" font-weight="400" text-anchor="middle">ALF</text>
+<rect x="1027" y="948.9428571428572" width="28" height="36.7714285714286" rx="1.5" fill="#d26964"/>
+<rect x="1063" y="832.9714285714285" width="28" height="152.74285714285725" rx="1.5" fill="#287faa"/>
+<text x="1077" y="820.9714285714285" font-size="21" fill="#287faa" font-weight="600" text-anchor="middle">+16.2</text>
+<text x="1059" y="1111" font-size="23" fill="#18212b" font-weight="400" text-anchor="middle">Web</text>
+<rect x="1126" y="985.7142857142858" width="28" height="10.37142857142851" rx="1.5" fill="#d26964"/>
+<text x="1140" y="1014.0857142857143" font-size="21" fill="#d26964" font-weight="400" text-anchor="middle">-1.1</text>
+<rect x="1162" y="858.4285714285714" width="28" height="127.28571428571433" rx="1.5" fill="#287faa"/>
+<text x="1176" y="846.4285714285714" font-size="21" fill="#287faa" font-weight="600" text-anchor="middle">+13.5</text>
+<text x="1158" y="1111" font-size="23" fill="#18212b" font-weight="400" text-anchor="middle">Sci</text>
+<rect x="1248" y="940.4571428571428" width="28" height="45.25714285714298" rx="1.5" fill="#d26964"/>
+<rect x="1284" y="797.1428571428571" width="28" height="188.57142857142867" rx="1.5" fill="#287faa"/>
+<text x="1298" y="785.1428571428571" font-size="21" fill="#287faa" font-weight="600" text-anchor="middle">+20.0</text>
+<text x="1280" y="1111" font-size="23" fill="#18212b" font-weight="400" text-anchor="middle">ALF</text>
+<rect x="1347" y="962.1428571428571" width="28" height="23.57142857142867" rx="1.5" fill="#d26964"/>
+<rect x="1383" y="890.4857142857143" width="28" height="95.22857142857151" rx="1.5" fill="#287faa"/>
+<text x="1397" y="878.4857142857143" font-size="21" fill="#287faa" font-weight="600" text-anchor="middle">+10.1</text>
+<text x="1379" y="1111" font-size="23" fill="#18212b" font-weight="400" text-anchor="middle">Web</text>
+<rect x="1446" y="985.7142857142858" width="28" height="67.88571428571413" rx="1.5" fill="#d26964"/>
+<text x="1460" y="1071.6" font-size="21" fill="#d26964" font-weight="400" text-anchor="middle">-7.2</text>
+<rect x="1482" y="980.0571428571428" width="28" height="5.657142857142958" rx="1.5" fill="#287faa"/>
+<text x="1496" y="968.0571428571428" font-size="21" fill="#287faa" font-weight="600" text-anchor="middle">+0.6</text>
+<text x="1478" y="1111" font-size="23" fill="#18212b" font-weight="400" text-anchor="middle">Sci</text>
+<text x="842" y="920" transform="rotate(-90 842 920)" fill="#687584" font-size="22" text-anchor="middle">Gain vs. teacher (pp)</text>
+<text x="1225" y="1151" font-size="23" fill="#687584" font-weight="400" text-anchor="middle">0 = teacher accuracy</text>
+</g></svg>

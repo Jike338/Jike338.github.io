@@ -1,0 +1,3 @@
+amazon.png: https://assets.aboutamazon.com/2e/d7/ac71f1f344c39f8949f48fc89e71/amazon-logo-squid-ink-smile-orange.png
+honda-research.png: https://usa.honda-ri.com/o/liferay-hri-theme/images/honda-main-logo.png
+salesforce.jpg: https://www.salesforce.com/news/wp-content/uploads/sites/3/2021/05/Salesforce-logo.jpg

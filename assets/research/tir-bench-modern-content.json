@@ -1,0 +1,18 @@
+{
+  "source": "tir-bench.png",
+  "tasks": [
+    {"id":"color","name":"Color","count":100,"question":["What is the number in the center","of this image? Select from the","following choices."],"answer":"D. 87","crop":{"left":13,"top":121,"width":191,"height":191}},
+    {"id":"low-light","name":"Low-Light","count":50,"question":["How many ducks are in the image?"],"answer":"3","crop":{"left":253,"top":121,"width":191,"height":191}},
+    {"id":"instrument-reading","name":"Instrument Reading","count":80,"question":["What is the stopwatch second","reading in the image? Provide","an integer."],"answer":"5","crop":{"left":493,"top":121,"width":191,"height":191}},
+    {"id":"jigsaw","name":"Jigsaw","count":120,"question":["Determine the correct arrangement","to restore the original image."],"answer":"7, 3, 1, 2, 4, 9, 5, 8, 6","crop":{"left":733,"top":121,"width":191,"height":191}},
+    {"id":"math","name":"Math","count":120,"question":["Which arch is the longest?","A. AB   B. BC   C. CD","D. DE   E. EG   F. GA"],"answer":"E. EG","crop":{"left":973,"top":121,"width":191,"height":191}},
+    {"id":"maze","name":"Maze","count":120,"question":["Please complete a maze game","starting from the red ball to","the green ball."],"answer":"B. DDRRU…RRR","crop":{"left":13,"top":469,"width":191,"height":191}},
+    {"id":"rotated-ocr","name":"Rotated OCR","count":60,"question":["What is written in the image?"],"answer":"jump","crop":{"left":253,"top":469,"width":191,"height":191}},
+    {"id":"proportion","name":"Proportion","count":120,"question":["Which value is closest to the image","proportion occupied by the blue","chair in the bottom-right corner?"],"answer":"F. 7%","crop":{"left":493,"top":469,"width":191,"height":191}},
+    {"id":"rotation","name":"Rotation","count":75,"question":["How many degrees should you rotate","this image CLOCKWISE to restore","its original orientation?"],"answer":"F. 330°","crop":{"left":733,"top":469,"width":191,"height":191}},
+    {"id":"spot-the-difference","name":"Spot the Difference","count":100,"question":["Output the list of patch indices","where the two images differ."],"answer":"1, 2, 6, 7, 15, 16, 20","crop":{"left":994,"top":469,"width":147,"height":192}},
+    {"id":"symbolic-reasoning","name":"Symbolic Reasoning","count":50,"question":["How many edges are there in","this polygon?"],"answer":"E. 16","crop":{"left":13,"top":817,"width":191,"height":191}},
+    {"id":"visual-search","name":"Visual Search","count":120,"question":["Is a brown sheep present to the left","of the central white horse?"],"answer":"B. No","crop":{"left":253,"top":817,"width":191,"height":191}},
+    {"id":"word-search","name":"Word Search","count":100,"question":["In the figure, in which row and","column does the number 8 appear?"],"answer":"[17, 1]","crop":{"left":493,"top":817,"width":188,"height":191}}
+  ]
+}

@@ -1,0 +1,4 @@
+{
+  "flag": "\\operatorname{Flag}(\\mathcal D)=\\mathbf{1}\\!\\left\\{\\left[\\exists k:\\;{\\color{#287faa}A(h_k)-A_0\\ge0.20\\;\\land\\;p_k<0.05}\\right]\\lor{\\color{#946247}\\left[S_{\\mathrm{lex}}\\ge0.15\\right]}\\right\\}",
+  "definitions": "A(h_k)=\\frac{1}{|\\mathcal D_{\\mathrm{probe}}|}\\!\\sum_{(x,y)\\in\\mathcal D_{\\mathrm{probe}}}\\!\\mathbf{1}\\{h_k(x)=y\\},\\quad A_0=\\max\\!\\left\\{\\frac1K,A_{\\mathrm{majority}}\\right\\},\\qquad S_{\\mathrm{lex}}=\\frac1m\\sum_{j=1}^{m}\\frac{I(Z_j;Y)}{H(Y)}"
+}

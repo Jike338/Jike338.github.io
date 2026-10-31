@@ -1,0 +1,24 @@
+Built-in image_gen prompt:
+
+Use case: style-transfer.
+Edit target: attached TIR-Bench academic teaser. Redesign its presentation into an ultra-modern, polished scientific task gallery. Preserve all THIRTEEN task categories, all their original miniature example images, question text, correct answers and example counts. The miniature images are real benchmark inputs: DO NOT alter, rotate, solve, relabel or invent their contents. Use original images exactly; styling is confined to surrounding layout/typography.
+Layout: compact near-square 5-column by 3-row grid. First 5 cards: Color, Low-Light, Instrument Reading, Jigsaw, Math. Second row: Maze, Rotated OCR, Proportion, Rotation, Spot the Difference. Third row: Symbolic Reasoning, Visual Search, Word Search, then one clean summary tile occupying the final two columns. This replaces the old bottom-right colored count grid: put each example count directly on its own card as a small muted count badge.
+Style: precision editorial/web design, white canvas, dark navy headings, excellent Helvetica/Inter sans-serif typography, thin light-gray rules, small-radius corners, no shadows, no handwritten text or serif headers, no heavy black borders, no bright green answer text, no pastel rainbow blocks. Restrained blue #3c7fb1 and warm bronze #946247 accents. Strong alignment. Every card image is large and prominent, generous enough to see but compact spacing. Task name top, small sample count, concise original prompt, original image, then a slim answer row in subdued bronze. No new paper title or arxiv ID.
+Counts: Color 100; Low-Light 50; Instrument Reading 80; Jigsaw 120; Math 120; Maze 120; Rotated OCR 60; Proportion 120; Rotation 75; Spot the Difference 100; Symbolic Reasoning 50; Visual Search 120; Word Search 100. Summary tile: "TIR-Bench", "13 tasks", "1,215 examples", "Thinking with images". Optional minimal horizontal bars showing counts using the correct 13 values, but no additional invented findings.
+Preserve original questions and answers:
+Color: What is the number in the center of this image? Select from the following choices. Answer D. 87.
+Low-Light: How many ducks are in the image? Answer 3.
+Instrument Reading: What is the stopwatch second reading in the image? Provide an integer. Answer 5.
+Jigsaw: Determine the correct arrangement to restore the original image. Answer 7, 3, 1, 2, 4, 9, 5, 8, 6.
+Math: Which arch is the longest? A. AB B. BC C. CD D. DE E. EG F. GA. Answer E. EG.
+Maze: Please complete a maze game starting from the red ball to the green ball. Answer B. DDRRU...RRR (retain abbreviated form).
+Rotated OCR: What is written in the image? Answer jump.
+Proportion: Which of the following values is the closest to the proportion of the image occupied by chair in blue bottom right corner? Answer F. 7%.
+Rotation: How many degrees should you rotate this image CLOCKWISE to restore it to its original orientation? Answer F. 330°.
+Spot the Difference: Output the list of patch indices where the two images differ. Answer 1,2,6,7,15,16,20.
+Symbolic Reasoning: How many edges are there in this polygon? Answer E. 16.
+Visual Search: Is a brown sheep present to the left of the central white horse? Answer B. No.
+Word Search: In the figure, in which row and column does the number 8 appear? Answer [17, 1].
+Preserve exact miniature images (including dark duck photograph, stopwatch, 3x3 doughnut jigsaw, geometry diagram, maze, rotated handwritten word, blue-chair photograph, rotated animal photograph, paired spot-difference images, polygon, framed painting, numeric grid and color-vision circle). High-resolution crisp image, no cut-off text.
+
+Final production: recreated the generated gallery layout using native SVG text and framing; replaced all generated task images with exact crops from tir-bench.png. Source crop coordinates, prompts, answers and sample counts are recorded in tir-bench-modern-content.json.

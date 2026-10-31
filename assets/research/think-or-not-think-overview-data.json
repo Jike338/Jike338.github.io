@@ -1,0 +1,25 @@
+{
+  "source": "https://arxiv.org/html/2503.16188v6",
+  "model": "Qwen2-VL-Instruct",
+  "cvbench_2b": {
+    "source_table": 1,
+    "training_data": "SAT",
+    "methods": ["Thinking-RFT", "Think-After-Answer", "No-Thinking-RFT", "Adaptive-Thinking"],
+    "accuracy_percent": [70.36, 73.65, 76.76, 77.03],
+    "finetuning_minutes": [599, 408, 139, 208]
+  },
+  "mathvista": {
+    "source_table": 3,
+    "training_data": "Math-40K",
+    "methods": ["Thinking-RFT", "No-Thinking-RFT", "Adaptive-Thinking"],
+    "accuracy_percent_2b": [44.90, 48.80, 50.20],
+    "accuracy_percent_7b": [64.60, 59.10, 64.70]
+  },
+  "adaptive_response_types": {
+    "source_table": 10,
+    "columns": ["MathVista", "MathVision", "CVBench", "PuzzleVQA", "AlgoPuzzleVQA"],
+    "thinking_percent_2b": [0, 0, 0, 0, 0],
+    "thinking_percent_7b": [100, 100, 99.6, 0, 0],
+    "interpretation": "Task-level response strategy after RFT; not per-question routing."
+  }
+}
